@@ -122,6 +122,28 @@ print ("list1= ['Google', 'Taobao', 'Baidu']: ",list1)
 tuple1=tuple(list1)
 print ('tuple1=tuple(list1): ',tuple1)
 
+#创建字典
+dict = {'num':1234, 'Cbyte':'Toms', 'Objlist':[1,4,8]}
+print ('dict :',str(dict))
+print ("dict['num']", dict['num']);
+print ("dict['Objlist']", dict['Objlist'][0]);
+#修改字典值
+dict['num'] = 5678
+print ("dict['num']", dict['num']);
+#新增字典值
+dict['AddNum'] = 9000
+print ("dict['AddNum']", dict['AddNum']);
+#删除字典值
+#del dict['AddNum'];
+#print ("dict['AddNum']", dict['AddNum']);
+#清空字典值
+dict.clear()
+print ('dict :',str(dict));
+#删除字典
+del dict
+print ('dict :',str(dict));
+
+
 
 
 
@@ -142,8 +164,10 @@ print('A');print('B');print('C');
 print('Layer 1')
 if True:
 	print('	SubLayer 1')
+elif True:
+    print('	SubLayer 2')
 else:
-	print('	SubLayer 2')
+	print('	SubLayer 3')
 print('Layer 3')
 
 
